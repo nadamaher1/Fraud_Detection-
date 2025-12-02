@@ -312,11 +312,11 @@ fraud-detection/
 
 ## Important Notes
 
-1. **Class Imbalance**: The dataset is highly imbalanced. We used SMOTE and class weights to address this.
+1. Class Imbalance: The dataset is highly imbalanced. We used SMOTE and class weights to address this.
 
-2. **Data Leakage Prevention**: All encoding and scaling was fitted on training data only, then applied to validation and test sets.
+2. Data Leakage Prevention: All encoding and scaling was fitted on training data only, then applied to validation and test sets.
 
-3. **Test Set Usage**: The test set should be used ONLY ONCE for final evaluation. Do not tune models based on test results.
+3. Test Set Usage: The test set should be used ONLY ONCE for final evaluation. Do not tune models based on test results.
 
-4. **Model Selection**: Choose the best model based on F1-score and ROC-AUC from validation results, not test results.
+4. Model Selection: Choose the best model based on F1-score and ROC-AUC from validation results, not test results.
 
