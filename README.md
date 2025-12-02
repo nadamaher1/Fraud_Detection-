@@ -301,14 +301,14 @@ fraud-detection/
 
 ## Key Insights
 
-### **Most Important Features for Fraud Detection**:
+### Most Important Features for Fraud Detection:
 1. Transaction amount
 2. Customer historical fraud rate
 3. Merchant ID
 4. Transaction category
 5. Time of transaction
 
-### **Fraud Patterns Discovered**:
+### Fraud Patterns Discovered:
 - Certain merchants have higher fraud rates
 - Specific transaction categories are more fraud-prone
 - Customer transaction history is highly predictive
