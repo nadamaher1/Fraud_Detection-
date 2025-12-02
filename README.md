@@ -303,10 +303,8 @@ fraud-detection/
 │   ├── validation_results.csv             # Validation metrics
 │   ├── test_results.json                  # Final test results
 │   ├── feature_importance_rf.csv          # Feature rankings
-│   └── *.png                              # Visualization plots
-│
+│   
 └── README.md                              # This file
-```
 
 ---
 
@@ -337,19 +335,3 @@ fraud-detection/
 
 4. **Model Selection**: Choose the best model based on F1-score and ROC-AUC from validation results, not test results.
 
----
-
-## 📞 Contact & Support
-
-For questions or issues, please contact [Your Name/Team]
-
----
-
-## 📄 License
-
-[Add your license information here]
-
----
-
-**Last Updated**: December 2, 2025  
-**Version**: 1.0
