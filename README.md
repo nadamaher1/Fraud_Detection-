@@ -1,14 +1,12 @@
 # Fraud Detection Machine Learning Project
 
-## 📊 Project Overview
+## Project Overview
 
 This project builds a machine learning system to detect fraudulent transactions in financial data. The system analyzes transaction patterns and identifies suspicious activities with high accuracy, helping businesses prevent financial losses.
 
 **Business Impact**: The model can detect over 90% of fraudulent transactions while minimizing false alarms, potentially saving millions in fraud-related losses.
 
----
-
-## 🎯 Problem Statement
+## Problem Statement
 
 Financial fraud is a critical challenge for businesses, costing billions annually. This project addresses the need to:
 - Automatically identify fraudulent transactions in real-time
@@ -18,7 +16,7 @@ Financial fraud is a critical challenge for businesses, costing billions annuall
 
 ---
 
-## 📁 Dataset
+## Dataset
 
 **Source**: Fraud transaction dataset with 594,643 transactions  
 **Time Period**: 180 hours (7.5 days) of transaction data  
@@ -31,16 +29,16 @@ Financial fraud is a critical challenge for businesses, costing billions annuall
 
 ---
 
-## 🔄 Project Workflow
+## Project Workflow
 
 ### **Phase 1: Data Quality Assessment**
 **What we did**: Checked the data for missing values, errors, and inconsistencies
 
 **Key Findings**:
-- ✅ No missing (NULL) values found
-- ✅ No duplicate transactions
-- ⚠️ Found 52 transactions with $0.00 amount (removed as data errors)
-- ⚠️ Severe class imbalance: 98.79% non-fraud vs 1.21% fraud
+-  No missing (NULL) values found
+-  No duplicate transactions
+-  Found 52 transactions with $0.00 amount (removed as data errors)
+-  Severe class imbalance: 98.79% non-fraud vs 1.21% fraud
 
 **Files**: `data_quality_check.py`, `check_zero_amount_fraud.py`
 
@@ -144,7 +142,7 @@ Financial fraud is a critical challenge for businesses, costing billions annuall
 ---
 
 ### **Phase 6: Model Training**
-**What we did**: Trained four different machine learning algorithms and compared their performance
+**What we did**: Explored 3 different machine learning algorithms for future reference
 
 #### **Models Trained**:
 
@@ -179,16 +177,9 @@ Financial fraud is a critical challenge for businesses, costing billions annuall
 - **F1-Score**: Balance between precision and recall
 - **ROC-AUC**: Overall ability to distinguish fraud from non-fraud
 
-**Visualizations Created**:
-- Confusion matrices for each model
-- ROC curves comparison
-- Precision-Recall curves comparison
-- Metrics comparison charts
-
 **Files**: `validate_model.py`  
 **Outputs**: `validation_results.csv`, `confusion_matrix_*.png`, `roc_curves_comparison.png`
 
----
 
 ### **Phase 8: Final Testing**
 **What we did**: Evaluated the best model on completely unseen test data for final performance assessment
@@ -200,7 +191,7 @@ Financial fraud is a critical challenge for businesses, costing billions annuall
 
 ---
 
-## 📈 Expected Results
+## Expected Results
 
 Based on similar fraud detection projects, you can expect:
 
@@ -214,7 +205,7 @@ Based on similar fraud detection projects, you can expect:
 
 ---
 
-## 🚀 How to Run the Project
+## How to Run the Project
 
 ### **Prerequisites**:
 ```bash
@@ -265,7 +256,7 @@ pip install pandas numpy scikit-learn xgboost imbalanced-learn matplotlib seabor
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 fraud-detection/
@@ -308,7 +299,7 @@ fraud-detection/
 
 ---
 
-## 🔑 Key Insights
+## Key Insights
 
 ### **Most Important Features for Fraud Detection**:
 1. Transaction amount
@@ -325,7 +316,7 @@ fraud-detection/
 
 ---
 
-## ⚠️ Important Notes
+## Important Notes
 
 1. **Class Imbalance**: The dataset is highly imbalanced. We used SMOTE and class weights to address this.
 
