@@ -189,7 +189,6 @@ Financial fraud is a critical challenge for businesses, costing billions annuall
 **Files**: `test_model.py`  
 **Outputs**: `test_results.json`, `test_classification_report.txt`, `test_*.png`
 
----
 
 ## Expected Results
 
@@ -254,7 +253,6 @@ pip install pandas numpy scikit-learn xgboost imbalanced-learn matplotlib seabor
    python test_model.py
    ```
 
----
 
 ## Project Structure
 
@@ -285,9 +283,9 @@ fraud-detection/
 │   └── test_model.py                      # Final testing
 │
 ├── models/
-│   ├── model_logistic_regression.pkl      # Trained LR model
-│   ├── model_random_forest.pkl            # Trained RF model
-│   ├── model_xgboost.pkl                  # Trained XGB model
+│   ├── model_logistic_regression.pkl      # LR model training script
+│   ├── model_random_forest.pkl            # RF model training script
+│   ├── model_xgboost.pkl                  # XGB model training script
 │
 ├── results/
 │   ├── model_comparison.csv               # Model performance comparison
@@ -296,8 +294,6 @@ fraud-detection/
 │   ├── feature_importance_rf.csv          # Feature rankings
 │   
 └── README.md                              # This file
-
----
 
 ## Key Insights
 
@@ -313,8 +309,6 @@ fraud-detection/
 - Specific transaction categories are more fraud-prone
 - Customer transaction history is highly predictive
 - Transaction amounts show distinct patterns for fraud vs non-fraud
-
----
 
 ## Important Notes
 
