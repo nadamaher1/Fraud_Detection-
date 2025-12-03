@@ -11,7 +11,7 @@ This project builds a machine learning system to detect fraudulent transactions 
 Financial fraud is a critical challenge for businesses, costing billions annually. This project addresses the need to:
 - Automatically identify fraudulent transactions in real-time
 - Reduce manual review workload
-- Minimize false positives that frustrate legitimate customers
+- Reduce incorrect flags that impact customers
 - Provide explainable predictions for compliance and auditing
 
 ---
@@ -20,7 +20,7 @@ Financial fraud is a critical challenge for businesses, costing billions annuall
 
 **Source**: Fraud transaction dataset with 594,643 transactions  
 **Time Period**: 180 hours (7.5 days) of transaction data  
-**Features**: 10 columns including customer info, merchant details, transaction amount, and fraud label
+**Features**: 10 columns of features including customer info, merchant details, transaction amount, and fraud label
 
 ### Key Characteristics:
 - **Highly Imbalanced**: Only 1.21% of transactions are fraudulent
@@ -65,7 +65,7 @@ Financial fraud is a critical challenge for businesses, costing billions annuall
 - **Validation Set (15%)**: 89,189 transactions - Used to tune the model
 - **Test Set (15%)**: 89,189 transactions - Used for final unbiased evaluation
 
-**Why this matters**: Keeping test data completely separate ensures honest performance measurement
+**Why this matters**: Keeping test data completely separate ensures precised performance measurement
 
 **Files**: `split_data.py`  
 **Outputs**: `fraud_train.csv`, `fraud_validation.csv`, `fraud_test.csv`
@@ -137,14 +137,14 @@ Financial fraud is a critical challenge for businesses, costing billions annuall
    - **Best for**: Logistic Regression, Neural Networks
 
 **Files**: `handle_imbalance.py`  
-**Outputs**: `fraud_train_smote.csv`, `fraud_train_undersampled.csv`, `fraud_train_hybrid.csv`, `class_weights.txt`
+**Outputs**: `fraud_train_smote.csv`, `fraud_train_undersampled.csv`, `class_weights.txt`
 
 ---
 
 ### **Phase 6: Model Training**
-**What we did**: Explored 3 different machine learning algorithms for future reference
+**What we did**: Explored three training scripts for different machine learning algorithms for future reference 
 
-#### **Models Trained**:
+#### **Models to be trained**:
 
 1. **Logistic Regression**
    - Simple, interpretable model
@@ -168,7 +168,7 @@ Financial fraud is a critical challenge for businesses, costing billions annuall
 ---
 
 ### **Phase 7: Model Validation**
-**What we did**: Thoroughly tested each model on the validation set to choose the best one
+**What we did**: Each model will be tested on the validation set, and the prepared script will be used to select the best one.
 
 **Evaluation Metrics**:
 - **Accuracy**: Overall correctness
@@ -182,9 +182,9 @@ Financial fraud is a critical challenge for businesses, costing billions annuall
 
 
 ### **Phase 8: Final Testing**
-**What we did**: Evaluated the best model on completely unseen test data for final performance assessment
+**What we did**: The selected model will be evaluated on unseen test data to measure its final performance using the prepared script. 
 
-**Why this matters**: This gives us an honest estimate of how the model will perform in the real world.
+**Why this matters**: This gives us a precised estimatimation of how the model will perform in the real world.
 
 **Files**: `test_model.py`  
 **Outputs**: `test_results.json`, `test_classification_report.txt`, `test_*.png`
